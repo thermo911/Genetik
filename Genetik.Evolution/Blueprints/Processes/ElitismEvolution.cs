@@ -46,7 +46,10 @@ public sealed class ElitismEvolution<TGene> : IEvolutionProcess<TGene>
 
         newGeneration.Sort(GenomesDescComparison);
         _currGeneration = newGeneration;
-        BestGenome = _currGeneration[0];
+
+        if (GenomesDescComparison(BestGenome, _currGeneration[0]) > 0)
+            BestGenome = _currGeneration[0];
+        
         return _currGeneration;
     }
 

@@ -13,8 +13,8 @@ int genomeLength = 10;
 
 double elitismRate = 0.15;
 
-double w = 100;
-double maxAbsX = w / 5;
+double w = 1.0;
+double maxAbsX = w / 4;
 
 
 
@@ -24,7 +24,7 @@ var generator = new RandomGenerator(maxAbsX, maxAbsX);
 
 var evaluator = new ComplexFitnessEvaluator<Vec2>
     .Builder(new PathLengthEvaluator(field), 1.0)
-    .AddWeightedEvaluator(new DistanceToFinishEvaluator(field), 2.0)
+    .AddWeightedEvaluator(new DistanceToFinishEvaluator(field), 10.0)
     .AddCriteria(new WholePathInsideCriteria(field))
     .AddCriteria(new NoCollisionCriteria(field))
     .Build();
@@ -42,7 +42,7 @@ var evolution = new ElitismEvolution<Vec2>(
     crosser,
     mutator);
 
-for (int i = 0; i < 1000; i++)
+for (int i = 0; i < 10000; i++)
 {
     evolution.NextGeneration();
     // Console.WriteLine(i);
