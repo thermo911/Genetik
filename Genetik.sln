@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Genetik.Core", "Genetik.Core\Genetik.Core.csproj", "{213B6E21-B5BD-491E-B085-E9C9E6328156}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Genetik.Evolution", "Genetik.Evolution\Genetik.Evolution.csproj", "{2A758206-CAEA-43E7-89A6-D4D079E058E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Genetik.Sandbox", "Genetik.Sandbox\Genetik.Sandbox.csproj", "{7C754411-0018-4145-9DE0-D0EEBA51F278}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{213B6E21-B5BD-491E-B085-E9C9E6328156}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{213B6E21-B5BD-491E-B085-E9C9E6328156}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{213B6E21-B5BD-491E-B085-E9C9E6328156}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A758206-CAEA-43E7-89A6-D4D079E058E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A758206-CAEA-43E7-89A6-D4D079E058E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A758206-CAEA-43E7-89A6-D4D079E058E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A758206-CAEA-43E7-89A6-D4D079E058E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C754411-0018-4145-9DE0-D0EEBA51F278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C754411-0018-4145-9DE0-D0EEBA51F278}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C754411-0018-4145-9DE0-D0EEBA51F278}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C754411-0018-4145-9DE0-D0EEBA51F278}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
