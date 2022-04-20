@@ -2,7 +2,7 @@
 
 public interface IEvolutionProcess<TGene>
 {
-    Population<TGene> CurrGeneration { get; }
-    
-    Population<TGene> NextGeneration();
+    IReadOnlyList<Genome<TGene>> CurrGeneration { get; }
+    Genome<TGene> BestGenome { get; }
+    IReadOnlyList<Genome<TGene>> NextGeneration();
 }

@@ -26,4 +26,9 @@ public static class RandomExtensions
 
         return new Tuple<int, int>(pair.Item1 + minValue, pair.Item2 + minValue);
     }
+
+    public static double NextDouble(this Random random, double maxAbsValue)
+    {
+        return random.NextDouble() * (maxAbsValue * 2) - maxAbsValue;
+    }
 }
